@@ -1,4 +1,4 @@
-import { deleteBooking, updateBookingStatus } from '@/lib/db'
+import { deleteBooking, updateBookingStatus } from '@/lib/googleSheets'
 
 export async function PUT(
   request: Request,
@@ -18,7 +18,7 @@ export async function PUT(
       )
     }
     
-    return Response.json({ success: true, booking: updated })
+    return Response.json({ success: true, updated })
   } catch (error) {
     console.error('Error updating booking:', error)
     return Response.json(

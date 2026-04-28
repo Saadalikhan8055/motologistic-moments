@@ -64,16 +64,19 @@ export default function AdminDashboard() {
 
   const updateStatus = async (bookingId: number, newStatus: string) => {
     try {
-      const response = await fetch(`/api/admin/bookings/${bookingId}/status`, {
+      const response = await fetch(`/api/admin/bookings/${bookingId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })
       })
       if (response.ok) {
         fetchBookings()
+      } else {
+        alert('Failed to update booking status')
       }
     } catch (error) {
       console.error('Error updating booking:', error)
+      alert('Error updating booking status')
     }
   }
 
@@ -85,9 +88,13 @@ export default function AdminDashboard() {
         })
         if (response.ok) {
           fetchBookings()
+          alert('Booking deleted successfully')
+        } else {
+          alert('Failed to delete booking')
         }
       } catch (error) {
         console.error('Error deleting booking:', error)
+        alert('Error deleting booking')
       }
     }
   }
@@ -95,6 +102,9 @@ export default function AdminDashboard() {
   const handleExportExcel = async () => {
     try {
       const response = await fetch('/api/admin/bookings/export')
+      if (!response.ok) {
+        throw new Error('Failed to export bookings')
+      }
       const blob = await response.blob()
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement('a')
