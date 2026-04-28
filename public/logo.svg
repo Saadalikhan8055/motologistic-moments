@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Car Silhouette -->
+  <g id="car-silhouette">
+    <!-- Main body outline -->
+    <path d="M 150 280 L 220 200 L 380 180 L 650 180 L 750 240 L 820 280 L 820 320 L 150 320 Z" 
+          fill="none" stroke="#000000" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    
+    <!-- Window outline -->
+    <path d="M 280 220 L 420 200 L 620 200 L 680 240" 
+          fill="none" stroke="#000000" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main Text -->
+  <g id="main-text">
+    <!-- MOTOLOGISTIC text -->
+    <text x="300" y="420" font-family="Arial, sans-serif" font-size="120" font-weight="900" letter-spacing="-2">
+      <tspan x="300" fill="#000000">MOTO</tspan><tspan fill="#FF2E2E">LOGISTIC</tspan>
+    </text>
+    
+    <!-- MOMENTS text -->
+    <text x="320" y="510" font-family="Arial, sans-serif" font-size="70" font-weight="300" font-style="italic" letter-spacing="8">
+      <tspan fill="#000000">MOMENTS</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative lines -->
+  <line x1="200" y1="540" x2="280" y2="540" stroke="#000000" stroke-width="3"/>
+  <line x1="720" y1="540" x2="800" y2="540" stroke="#FF2E2E" stroke-width="3"/>
+  
+  <!-- Tagline -->
+  <text x="500" y="580" font-family="Arial, sans-serif" font-size="32" font-weight="400" text-anchor="middle" letter-spacing="4">
+    <tspan fill="#000000">WE CREATE.</tspan><tspan x="500" dy="35" fill="#FF2E2E">YOU CELEBRATE.</tspan>
+  </text>
+</svg>
