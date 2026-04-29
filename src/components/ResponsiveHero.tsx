@@ -9,7 +9,6 @@ interface ResponsiveHeroProps {
 }
 
 export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMobile, setIsMobile] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [particles, setParticles] = useState<Array<{ id: number; left: string; top: string; duration: string; delay: string }>>([])
@@ -38,26 +37,10 @@ export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) 
     generateParticles()
     window.addEventListener('resize', checkMobile)
 
-    // Mouse tracking for parallax (desktop only)
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isMobile) {
-        setMousePosition({ x: e.clientX, y: e.clientY })
-      }
-    }
-
-    window.addEventListener('mousemove', handleMouseMove)
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('resize', checkMobile)
     }
   }, [isMobile])
-
-  const getParallaxStyle = () => {
-    if (isMobile) return {}
-    return {
-      transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`,
-    }
-  }
 
   return (
     <section 
@@ -225,81 +208,6 @@ export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) 
             </div>
           </div>
 
-          {/* Visual Element (Mobile/Desktop) - Ultra-Premium Cinematic Card */}
-          <div className="flex w-full md:flex-1 relative h-80 md:h-96 justify-center items-center mt-8 md:mt-0">
-            {/* Animated Background Glow */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent-cyan/5 via-accent-purple/5 to-accent-blue/5 blur-2xl -z-10 animate-pulse-glow" />
-            
-            {/* Main Card with Glassmorphism */}
-            <div
-              className="relative w-full h-full rounded-3xl backdrop-blur-xl border border-accent-cyan/30 bg-gradient-to-br from-accent-cyan/8 to-accent-purple/8 overflow-hidden group hover:border-accent-cyan/60 transition-all duration-500"
-              style={getParallaxStyle()}
-            >
-              {/* Animated Border Gradient */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-accent-cyan via-accent-purple to-accent-blue opacity-0 group-hover:opacity-20 transition-opacity duration-500 p-[2px]" />
-              
-              {/* Car Image */}
-              <Image 
-                src="/car.png"
-                alt="Premium Vehicle"
-                fill
-                className="object-cover object-center animate-float-up"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-              />
-              
-              {/* Red Reveal Overlay - Dramatic Effect */}
-              <div className="absolute inset-0 rounded-3xl pointer-events-none">
-                <svg viewBox="0 0 600 400" className="w-full h-full" style={{ opacity: 0.3 }}>
-                  <ellipse cx="300" cy="150" rx="180" ry="120" fill="#CC0000" opacity="0.4" />
-                </svg>
-              </div>
-              
-              {/* Overlay Gradient - Red to Dark */}
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-dark via-transparent to-transparent rounded-3xl" />
-              
-              {/* Premium Content */}
-              <div className="relative z-10 h-full flex flex-col items-center justify-between p-6">
-                {/* Top Accent Line */}
-                <div className="w-12 h-1 bg-gradient-to-r from-accent-cyan to-accent-purple rounded-full animate-shimmer-premium" />
-                
-                {/* Spacer */}
-                <div />
-                
-                {/* Bottom Content */}
-                <div className="text-center">
-                  {/* Premium Text with Gradient */}
-                  <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-accent-cyan via-text-primary to-accent-gold bg-clip-text text-transparent animate-pulse-intense">
-                    Premium Vehicle Reveals
-                  </h3>
-                  
-                  {/* Subtitle */}
-                  <p className="text-sm text-text-secondary mb-4">
-                    Cinematic Luxury Unveilings
-                  </p>
-                  
-                  {/* Feature Pills */}
-                  <div className="grid grid-cols-3 gap-2 w-full">
-                    {['4K', '24/7', 'Live'].map((feature, i) => (
-                      <div
-                        key={i}
-                        className="px-3 py-2 rounded-full bg-accent-cyan/10 border border-accent-cyan/20 text-xs font-bold text-accent-cyan text-center hover:bg-accent-cyan/20 transition-all duration-300"
-                        style={{
-                          animation: `slide-up 0.6s ease-out ${i * 0.1}s both`,
-                        }}
-                      >
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating Accent Orbs */}
-              <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-accent-cyan/30 to-transparent rounded-full blur-xl animate-float-x" />
-              <div className="absolute bottom-6 left-6 w-12 h-12 bg-gradient-to-tl from-accent-purple/30 to-transparent rounded-full blur-lg animate-float-up" style={{ animationDuration: '4s' }} />
-            </div>
-          </div>
         </div>
 
         {/* Scroll Indicator (Desktop) */}
