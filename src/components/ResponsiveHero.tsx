@@ -172,7 +172,7 @@ export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) 
                 src="/car.png"
                 alt="Premium Vehicle"
                 fill
-                className="object-contain object-center animate-float-up"
+                className="object-cover object-center animate-float-up"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
