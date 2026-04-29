@@ -155,7 +155,7 @@ export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) 
           </div>
 
           {/* Visual Element (Mobile/Desktop) - Ultra-Premium Cinematic Card */}
-          <div className="flex w-full md:flex-1 relative h-48 md:h-96 justify-center items-center mt-8 md:mt-0">
+          <div className="flex w-full md:flex-1 relative h-80 md:h-96 justify-center items-center mt-8 md:mt-0">
             {/* Animated Background Glow */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent-cyan/5 via-accent-purple/5 to-accent-blue/5 blur-2xl -z-10 animate-pulse-glow" />
             
