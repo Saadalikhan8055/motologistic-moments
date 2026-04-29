@@ -12,13 +12,13 @@ export default function Header({ onBookClick }: HeaderProps) {
       <div className="container py-5 flex justify-between items-center relative z-10">
         <div className="flex items-center gap-3 group hover:animate-float-bounce">
           {/* Logo Icon */}
-          <div className="relative w-14 h-14 bg-gradient-to-br from-accent-gold to-purple-premium rounded-full flex items-center justify-center shadow-lg group-hover:shadow-[0_0_30px_rgba(212,175,55,0.8)] group-hover:scale-110 transition-all duration-300 p-2 animate-pulse-dot">
+          <div className="relative w-14 h-14 bg-gradient-to-br from-accent-gold to-purple-premium rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-[0_0_30px_rgba(212,175,55,0.8)] group-hover:scale-110 transition-all duration-300 p-2 animate-pulse-dot">
             <img 
               src="/logo.png" 
               alt="Motologistic Moments Logo" 
               className="w-full h-full object-contain filter drop-shadow-lg"
             />
-            <div className="absolute inset-0 rounded-full border-2 border-accent-gold opacity-0 group-hover:opacity-100 animate-pulse-ring"></div>
+            <div className="absolute inset-0 rounded-lg border-2 border-accent-gold opacity-0 group-hover:opacity-100 animate-pulse-ring"></div>
           </div>
           
           {/* Logo Text */}

@@ -31,7 +31,7 @@ export default function ResponsiveHeader({ onBookingClick }: ResponsiveHeaderPro
         <div className="w-full px-8 py-4 flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-accent-gold/40 flex items-center justify-center">
+            <div className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-accent-gold/40 flex items-center justify-center">
               <img 
                 src="/logo.png" 
                 alt="Motologistic Moments" 
@@ -76,7 +76,7 @@ export default function ResponsiveHeader({ onBookingClick }: ResponsiveHeaderPro
         <div className="px-4 py-3 flex items-center justify-between">
           {/* Mobile Logo */}
           <div className="flex items-center gap-2">
-            <div className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-accent-gold/40 flex items-center justify-center">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-accent-gold/40 flex items-center justify-center">
               <img 
                 src="/logo.png" 
                 alt="Motologistic Moments" 
