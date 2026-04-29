@@ -100,7 +100,7 @@ export default function ResponsiveHero({ onBookingClick }: ResponsiveHeroProps) 
 
       {/* Content Container */}
       <div className="relative z-10 w-full px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col-reverse text-center md:flex md:text-left md:items-center md:justify-between md:gap-12">
+        <div className="flex flex-col-reverse text-center md:flex md:flex-row md:text-left md:items-center md:justify-between md:gap-12">
           {/* Text Content */}
           <div className="flex-1 mb-8 md:mb-0">
             {/* Main Heading */}
