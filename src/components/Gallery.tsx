@@ -7,42 +7,42 @@ const galleryItems = [
     id: 1,
     title: 'Pristine Reveal',
     category: 'Signature',
-    image: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=1',
     description: 'Elegant satin-cover reveal with professional lighting'
   },
   {
     id: 2,
     title: 'Cinematic Moment',
     category: 'Luxury',
-    image: 'https://images.unsplash.com/photo-1517457373614-b7152f00fc81?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=2',
     description: 'Professional cinematic documentation'
   },
   {
     id: 3,
     title: 'Dawn Reveal',
     category: 'Luxury',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=3',
     description: 'Golden hour luxury vehicle presentation'
   },
   {
     id: 4,
     title: 'Minimalist Elegance',
     category: 'Essential',
-    image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=4',
     description: 'Clean, refined delivery experience'
   },
   {
     id: 5,
     title: 'Premium Positioning',
     category: 'Signature',
-    image: 'https://images.unsplash.com/photo-1534224542775-9f1be4a13d51?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=5',
     description: 'Strategic positioning and ambient lighting'
   },
   {
     id: 6,
     title: 'White Glove Service',
     category: 'Luxury',
-    image: 'https://images.unsplash.com/photo-1489493072403-7e07b4e18d7f?w=600&h=400&fit=crop',
+    image: 'https://picsum.photos/600/400?random=6',
     description: 'Meticulous attention to detail'
   },
 ]
