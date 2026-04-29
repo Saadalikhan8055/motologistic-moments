@@ -18,7 +18,6 @@ export default function Header({ onBookClick }: HeaderProps) {
               alt="Motologistic Moments Logo" 
               className="w-full h-full object-contain filter drop-shadow-lg"
             />
-            <div className="absolute inset-0 rounded-lg border-2 border-accent-gold opacity-0 group-hover:opacity-100 animate-pulse-ring"></div>
           </div>
           
           {/* Logo Text */}
