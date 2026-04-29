@@ -152,7 +152,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                     value={formData.fullName}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent"
+                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent text-gray-900 placeholder-gray-500"
                     placeholder="John Doe"
                   />
                 </div>
@@ -166,7 +166,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent"
+                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent text-gray-900 placeholder-gray-500"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -180,7 +180,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent"
+                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent text-gray-900 placeholder-gray-500"
                     placeholder="+91 XXXXXXXXXX"
                   />
                 </div>
@@ -203,7 +203,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                     value={formData.vehicleModel}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent"
+                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent text-gray-900 placeholder-gray-500"
                     placeholder="e.g., Tesla Model S"
                   />
                 </div>
@@ -217,7 +217,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                     value={formData.preferredDate}
                     onChange={handleChange}
                     required
-                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent"
+                    className="w-full px-5 py-3 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none transition-all duration-300 font-medium group-hover:border-accent text-gray-900 placeholder-gray-500"
                   />
                 </div>
                 <div className="md:col-span-2 group">
@@ -249,7 +249,7 @@ export default function Booking({ onClose, onPackageSelect: _onPackageSelect }: 
                 name="specialRequests"
                 value={formData.specialRequests}
                 onChange={handleChange}
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none h-32 resize-none transition-all duration-300 font-medium text-gray-700 focus:text-gray-900"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-lg focus:border-accent focus:outline-none h-32 resize-none transition-all duration-300 font-medium text-gray-900 placeholder-gray-500 focus:text-gray-900"
                 placeholder="Tell us about any special preferences or requirements..."
               />
             </div>
